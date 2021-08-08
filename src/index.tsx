@@ -1,8 +1,19 @@
+import './index.css';
+import reportWebVitals from './reportWebVitals';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { PDFViewer } from '@react-pdf/renderer';
+import MyResume from './MyResume';
+
+
+const App = () => {
+  return (
+    <PDFViewer className="pdf_viewer">
+      <MyResume />
+    </PDFViewer>
+  );
+}
 
 ReactDOM.render(
   <React.StrictMode>

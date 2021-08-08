@@ -1,12 +1,14 @@
 import React from "react";
 import { Document, Page, Text } from "@react-pdf/renderer";
+import styles from "./MyResumeStyles";
+
 
 const MyResume = () =>
 (
     <Document>
-        <Page size="A4">
+        <Page size="A4" style={styles.page}>
             <Text>
-                test
+                tests
             </Text>
         </Page>
     </Document>
